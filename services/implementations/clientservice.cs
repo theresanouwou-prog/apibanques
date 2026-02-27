@@ -1,5 +1,6 @@
 ﻿using apibanque.models;
 using apibanque.repository.interfaces;
+using apibanque.services.interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace apibanque.services.implementations
 {
-    public class clientservice
+    public class clientservice : iclientservice
     {
         private readonly iclientrepository _repository;
 
